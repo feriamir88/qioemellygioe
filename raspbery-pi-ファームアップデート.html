@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-3b.jpg
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Raspbery Pi ファームアップデート</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Raspbery Pi ファームアップデート",
+  "datePublished": "2021-04-27",
+  "image": [https://yukaobu.files.wordpress.com/2016/08/minecrafte381a8scratch.png,https://jamesachambers.com/wp-content/uploads/2019/06/20190629_015222-1-1024x364.jpg,https://tynick.com/blog/05-22-2020/raspberry-pi-4-boot-from-usb/raspberry-pi-4-usb-boot-title.jpeg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=raspbery pi ファームアップデート",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Raspbery Pi ファームアップデート</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-info" href="/%E6%98%A5-%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%8D-2018.html">春 デート 服 2018</a>
+											<a class="badge badge-primary" href="/%E3%83%87%E3%83%BC%E3%83%88-line-%E8%AA%98%E3%81%84-%E6%96%B9.html">デート line 誘い 方</a>
+											<a class="badge badge-dark" href="/2%E5%9B%9E%E7%9B%AE%E3%81%AE%E3%83%87%E3%83%BC%E3%83%88-%E4%BD%95%E6%97%A5%E5%BE%8C.html">2回目のデート 何日後</a>
+											<a class="badge badge-light" href="/%E9%AB%98%E6%A0%A1%E7%94%9F-%E3%83%87%E3%83%BC%E3%83%88-%E9%A3%9F%E4%BA%8B-%E5%A0%B4%E6%89%80.html">高校生 デート 食事 場所</a>
+											<a class="badge badge-dark" href="/%E3%81%A1%E3%82%87%E3%81%A3%E3%81%A8-%E5%8D%B1%E3%81%AA%E3%81%84-%E8%A3%8F%E9%81%93-%E3%83%87%E3%83%BC%E3%83%88-%E6%B8%8B%E8%B0%B7-%E7%B7%A8.html">ちょっと 危ない 裏道 デート 渋谷 編</a>
+											<a class="badge badge-success" href="/%E9%A0%91%E5%BC%B5%E3%82%8A-%E3%81%99%E3%81%8E-%E3%81%AA%E3%81%84-%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%8D.html">頑張り すぎ ない デート 服</a>
+											<a class="badge badge-info" href="/%E6%A1%90-%E5%A1%91-%E4%BA%BA%E5%BD%A2-%E3%81%AE-%E4%BD%9C%E3%82%8A%E6%96%B9.html">桐 塑 人形 の 作り方</a>
+											<a class="badge badge-dark" href="/%E5%93%81%E5%B7%9D-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%8A%E3%81%99%E3%81%99%E3%82%81-%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC.html">品川 デート おすすめ ディナー</a>
+											<a class="badge badge-dark" href="/%E6%9D%BE%E6%9C%AC%E5%B8%82-%E3%83%99%E3%83%A9%E3%83%9F%E4%BA%BA%E5%BD%A2%E5%BA%97.html">松本市 ベラミ人形店</a>
+											<a class="badge badge-secondary" href="/%E5%88%9D%E3%82%81%E3%81%A6-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88-%E5%91%8A%E7%99%BD.html">初めて の デート 告白</a>
+											<a class="badge badge-warning" href="/%E4%B8%80%E8%88%AC-%E7%9A%84-%E3%81%AA-%E3%83%87%E3%83%BC%E3%83%88.html">一般 的 な デート</a>
+											<a class="badge badge-warning" href="/%E5%A4%A2%E4%BA%BA%E5%BD%A2-extra-dream.html">夢人形 extra dream</a>
+											<a class="badge badge-warning" href="/%E5%A5%AA%E7%97%B4%E4%BA%BA%E5%A6%BB-%E3%81%8A%E3%81%BE%E3%81%88%E3%81%AE%E5%A6%BB%E3%81%AF%E3%82%AA%E3%83%AC%E3%81%AE%E8%82%89%E4%BA%BA%E5%BD%A2.html">奪痴人妻 おまえの妻はオレの肉人形</a>
+											<a class="badge badge-dark" href="/%E3%81%8A%E9%87%91-%E3%81%AE-%E3%81%8B%E3%81%8B%E3%82%89%E3%81%AA%E3%81%84-%E3%83%87%E3%83%BC%E3%83%88-%E9%9D%99%E5%B2%A1.html">お金 の かからない デート 静岡</a>
+											<a class="badge badge-danger" href="/%E6%98%A0%E7%94%BB-%E3%81%AE-%E5%BE%8C-%E3%83%87%E3%83%BC%E3%83%88.html">映画 の 後 デート</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://raspida.com/wp-content/uploads/rpi4-firmware-update-title.png" data-lightbox="roadtrip" data-title="ラズパイ4を冷やすには最新ファームウェアの適用とアナログな手法が効果的">
+						<img class="card-img" src="https://raspida.com/wp-content/uploads/rpi4-firmware-update-title.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaYCFcfauXwEotZn1u9sUYI5i70geS1HzSzI5nM3TNhAvyoM98SC7cpbQWAW0rDEaTWRQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ラズパイ4を冷やすには最新ファームウェアの適用とアナログな手法が効果的
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/CeTRZ8R63Y0/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Big Eeprom Update Improved Usb Boot And Much More Youtube">
+						<img class="card-img" src="https://i.ytimg.com/vi/CeTRZ8R63Y0/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI8jtoRO2BrMezcavTnjWqxXowi77ttJ0iomHxPWatRbCzHqAm49LzBFggJx-LT0mmJ9M';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Big Eeprom Update Improved Usb Boot And Much More Youtube
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raspida.com/wp-content/uploads/magpi88-69p.png" data-lightbox="roadtrip" data-title="ラズパイ4を冷やすには最新ファームウェアの適用とアナログな手法が効果的">
+						<img class="card-img" src="https://raspida.com/wp-content/uploads/magpi88-69p.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5kuZiQgK5zxvHG6KvTVzJ6p_U3HC1f8I-PGnRI44RFXeEPhAEjSMf7H0TmuCZF09dCQE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ラズパイ4を冷やすには最新ファームウェアの適用とアナログな手法が効果的
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://my-web-site.iobb.net/~yuki/wp-content/uploads/2017/07/201707_up00_raspberry.jpg" data-lightbox="roadtrip" data-title="Raspberry Pi パッケージのアップデート方法 ある計算機屋さんの手帳">
+						<img class="card-img" src="http://my-web-site.iobb.net/~yuki/wp-content/uploads/2017/07/201707_up00_raspberry.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFzDdNCbK0TBp3GxV3Rgsbyt4UdQAoJFfUApU1LYPewVrHoVfLGN7kpMqtAyk8occGHI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi パッケージのアップデート方法 ある計算機屋さんの手帳
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tomo-magic.com/wp-content/uploads/2020/01/DSC_0011-scaled.jpg" data-lightbox="roadtrip" data-title="ラズベリーパイのファームウェアアップデートでお勧めしないコマンド ともと魔法と失敗の数々">
+						<img class="card-img" src="https://tomo-magic.com/wp-content/uploads/2020/01/DSC_0011-scaled.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYoWoFnbpm89-fTv80-joIDkjATwuzZ3nmfe1WVL4TmASC5cjiuVIvCDTgMp81F8QDGsg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ラズベリーパイのファームウェアアップデートでお勧めしないコマンド ともと魔法と失敗の数々
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raspida.com/wp-content/uploads/vli-firmware.png" data-lightbox="roadtrip" data-title="海外 ラズパイ4bの発熱問題はファームウェアアップデートで改善予定">
+						<img class="card-img" src="https://raspida.com/wp-content/uploads/vli-firmware.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg-vfbtzFGinHCL8uA2VhQNJTP_iQqJ2YXkxsW-yTu4acZFsuoXWCVx_3HDO9QESdH608';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				海外 ラズパイ4bの発熱問題はファームウェアアップデートで改善予定
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://digtvbg.com/wp-content/uploads/2019/08/raspberry-pi-firmware-update-digtvbg-linux-ubuntu-debian.png" data-lightbox="roadtrip" data-title="Raspberry Pi Firmware Update Linux System Administration Technology">
+						<img class="card-img" src="https://digtvbg.com/wp-content/uploads/2019/08/raspberry-pi-firmware-update-digtvbg-linux-ubuntu-debian.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOI6-kiaobi5NVSDx6RqvIH2O1havLGBOh1bppH6eeedcBqciRHfCGvNNDFbznLkqlw10';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi Firmware Update Linux System Administration Technology
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/02yyoevPQ2g/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Upgrade The Raspberry Pi Firmware In 5 Easy Steps Youtube">
+						<img class="card-img" src="https://i.ytimg.com/vi/02yyoevPQ2g/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1mVhs7qs1Ue6Rteyyu82XW0gZz8GZz4syxgKcdAQ5kIuPb5dlhSUNqQ7k-9AD4h54fiY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Upgrade The Raspberry Pi Firmware In 5 Easy Steps Youtube
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://user-images.githubusercontent.com/73306303/97037110-21ef1c80-1569-11eb-8b88-72bb3a966661.png" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Won T Boot Anymore Issue 1487 Raspberrypi Firmware Github">
+						<img class="card-img" src="https://user-images.githubusercontent.com/73306303/97037110-21ef1c80-1569-11eb-8b88-72bb3a966661.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt5gefWucKL9SuHmaKTIvGoY0w_DwhpQIg2ZBpg9G3DTz5YJis96cZ6X92SeDsM7iSwGI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Won T Boot Anymore Issue 1487 Raspberrypi Firmware Github
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-8b.jpg" data-lightbox="roadtrip" data-title="The Raspberry Pi Foundation Unveils The Raspberry Pi 4 Techcrunch">
+						<img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-8b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbDvzO8k5CQb1lVt1uImvhsOtVmVkD6PSPKieTqcdVvOIN7clmNUW-0Tg5XaGv6yyQbc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				The Raspberry Pi Foundation Unveils The Raspberry Pi 4 Techcrunch
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://hackaday.com/wp-content/uploads/2019/06/Pi1.jpg?w=800" data-lightbox="roadtrip" data-title="Raspberry Pi Slips Out New Pcb Version With Usb C Power Fix Hackaday">
+						<img class="card-img" src="https://hackaday.com/wp-content/uploads/2019/06/Pi1.jpg?w=800" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-wyIXltWGJDEz6JLsdoFy7c3f6xOKQnw7CpUcJCzMBV83MoReWVJzKnhx2l0YYTE2YuU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi Slips Out New Pcb Version With Usb C Power Fix Hackaday
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://livedoor.blogimg.jp/infinite_monkey/imgs/b/0/b07c965c.png" data-lightbox="roadtrip" data-title="Raspberry Pi 3 初期設定 ソフトウェアアップデート 続き 無限のサルの挑戦">
+						<img class="card-img" src="https://livedoor.blogimg.jp/infinite_monkey/imgs/b/0/b07c965c.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2HEr-Z59ter2XCcy0ZWNdLKWGN8iEcjiTQ-FhoxMz0Sgz-24J7ayR6RAnCLMllAvPdvA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 3 初期設定 ソフトウェアアップデート 続き 無限のサルの挑戦
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-1.jpg?w=730&amp;crop=1" data-lightbox="roadtrip" data-title="The Raspberry Pi 4 Gets More Ram For 35 Techcrunch">
+						<img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-1.jpg?w=730&amp;crop=1" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgBLQl6mN6WoBau5_bW-_fIVjSXsqZRss_jcXg_3_rm2EH2pNVuW7i1X2v0ryWOYSFLtY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				The Raspberry Pi 4 Gets More Ram For 35 Techcrunch
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.marathonus.com/media/2668/image30.png?width=500&amp;height=311.5246098439376" data-lightbox="roadtrip" data-title="Make Your Own Smart Mirror With Magic Mirror And A Raspberry Pi Marathon Consulting">
+						<img class="card-img" src="https://www.marathonus.com/media/2668/image30.png?width=500&amp;height=311.5246098439376" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLNJBVfct2eQ2JJ93YtS78r_uYJNf-y318NNBtNIRlMBlJ25MO3LG-tYr1xAEh7XH8h3A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Make Your Own Smart Mirror With Magic Mirror And A Raspberry Pi Marathon Consulting
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jamesachambers.com/wp-content/uploads/2019/10/raspberry-pi-eeprom2.jpg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide">
+						<img class="card-img" src="https://jamesachambers.com/wp-content/uploads/2019/10/raspberry-pi-eeprom2.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a08QOaiBSgQ56T8c27AD9vzOyQ2uflGzZjGyAPtL2CyVlWmLOvKnCyxFy_yaFu2R8n0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jamesachambers.com/wp-content/uploads/2019/06/20190629_015222-1-1024x364.jpg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Usb Boot Config Guide For Ssd Flash Drives">
+						<img class="card-img" src="https://jamesachambers.com/wp-content/uploads/2019/06/20190629_015222-1-1024x364.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSugkVb9EzqSv2i8KBN6vS3eH6t2oBdAQhrmflu98NWMEUcnTN0PFjGZghaEZZmqDwHOps';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Usb Boot Config Guide For Ssd Flash Drives
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-3b.jpg" data-lightbox="roadtrip" data-title="The Raspberry Pi Foundation Unveils The Raspberry Pi 4 Techcrunch">
+						<img class="card-img" src="https://techcrunch.com/wp-content/uploads/2019/06/Raspberry-Pi-4-3b.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbHQaO2XuLBrpnidZL6GcnZhVmPquztNzZFDGs1SrEUBOyUhbTnm_oF1545ec0K3cPvE4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				The Raspberry Pi Foundation Unveils The Raspberry Pi 4 Techcrunch
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ibb.co/9tbybjn/image0.png" data-lightbox="roadtrip" data-title="Diagnostic Page On Boot Up Raspberry Pi Forums">
+						<img class="card-img" src="https://i.ibb.co/9tbybjn/image0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXVsZmZFOs2sQlC0JU7Sj8-WLIuDZKxjgGXtpVDMsV3vDtJpadlcqH-Asx_fYkt8GO8dc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Diagnostic Page On Boot Up Raspberry Pi Forums
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jamesachambers.com/wp-content/uploads/2020/11/RaspberryPiImager2.png" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide">
+						<img class="card-img" src="https://jamesachambers.com/wp-content/uploads/2020/11/RaspberryPiImager2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxJJFRaHD0LuCxrLWmRRLtlbuFY-rT-QD7quOsdkp8OJZPMTZfY9dPS5aQHECNTh33Vig';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://jamesachambers.com/wp-content/uploads/2020/11/RaspberryPiImager1.png" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide">
+						<img class="card-img" src="https://jamesachambers.com/wp-content/uploads/2020/11/RaspberryPiImager1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr3fKpnSzVq47QIAsloscDidbhOcOCAeprXNEcloclnRTVzQKerRQGP45_A4XcmSUFtbI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Bootloader Firmware Updating Recovery Guide
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://community.volumio.org/uploads/default/optimized/2X/d/d5a11fe0650262b1e68222fa6cfb4db1a99fe7cf_2_1024x768.jpeg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 8gb Cannot Install This Board Requires Newer Software Help And Support Volumio">
+						<img class="card-img" src="https://community.volumio.org/uploads/default/optimized/2X/d/d5a11fe0650262b1e68222fa6cfb4db1a99fe7cf_2_1024x768.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROEeZO9Q_Gd2kRBYsZj6c4SymuNBBV2TMqUg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 8gb Cannot Install This Board Requires Newer Software Help And Support Volumio
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.ban.com/static/0c32dd66f91e0cb1cee23a48acb23a1c/2020-05-29-033212_1024x768_scrot.png" data-lightbox="roadtrip" data-title="Raspberry Pi 4 を Usb Boot させる 株式会社バンコム">
+						<img class="card-img" src="https://www.ban.com/static/0c32dd66f91e0cb1cee23a48acb23a1c/2020-05-29-033212_1024x768_scrot.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDfJStCsrMQzRZX2GLPh0bLO2hTuewUNaOVg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 を Usb Boot させる 株式会社バンコム
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://helpdeskgeek.com/wp-content/pictures/2020/04/Update-Raspi-Featured.jpg.optimal.jpg" data-lightbox="roadtrip" data-title="How To Update Raspberry Pi">
+						<img class="card-img" src="https://helpdeskgeek.com/wp-content/pictures/2020/04/Update-Raspi-Featured.jpg.optimal.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcimi3SBPiPkT2w94Bz825j5_CZX19VEOWoA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Update Raspberry Pi
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://yukaobu.files.wordpress.com/2016/08/minecrafte381a8scratch.png" data-lightbox="roadtrip" data-title="Raspberry Piのアップデート Yuka Life">
+						<img class="card-img" src="https://yukaobu.files.wordpress.com/2016/08/minecrafte381a8scratch.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG-Rvx4nZLfxQxuEo6UIKCrqJfAwzLrzPHjQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Piのアップデート Yuka Life
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://tynick.com/blog/05-22-2020/raspberry-pi-4-boot-from-usb/raspberry-pi-4-usb-boot-title.jpeg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Boot From Usb Tynick Com Aws Linux Raspberry Pi And Home Automation">
+						<img class="card-img" src="https://tynick.com/blog/05-22-2020/raspberry-pi-4-boot-from-usb/raspberry-pi-4-usb-boot-title.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyaFKMEnn0X3q7klRGCWCUNMsLjnandZkLXg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Boot From Usb Tynick Com Aws Linux Raspberry Pi And Home Automation
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://raspida.com/wp-content/uploads/usb-boot-beta-title_cd.png" data-lightbox="roadtrip" data-title="ベータ版まで来た Raspberry Pi 4でusbブートに対応間近">
+						<img class="card-img" src="https://raspida.com/wp-content/uploads/usb-boot-beta-title_cd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSucjf0j4s6LahXQgXWXhcAHes47jZxb7XaEA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				ベータ版まで来た Raspberry Pi 4でusbブートに対応間近
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://user-images.githubusercontent.com/60769531/88229099-30fac180-cc3e-11ea-84e8-29ca30b83270.jpg" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Is Not Booting Up Issue 1434 Raspberrypi Firmware Github">
+						<img class="card-img" src="https://user-images.githubusercontent.com/60769531/88229099-30fac180-cc3e-11ea-84e8-29ca30b83270.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1sAP1fFOuleNDCBhCdZOpFDTHzfR7J6_XNQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Is Not Booting Up Issue 1434 Raspberrypi Firmware Github
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://fwmotion.com/assets/img/blog/f32-workstation-on-raspi4.png" data-lightbox="roadtrip" data-title="Installing Fedora 32 Workstation Onto Raspberry Pi 4 Fw Motion">
+						<img class="card-img" src="https://fwmotion.com/assets/img/blog/f32-workstation-on-raspi4.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq7G2zFZLBd1qx2WeEFpyDJm3qZ_ZAWGztvA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Installing Fedora 32 Workstation Onto Raspberry Pi 4 Fw Motion
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-186-1030x494.png" data-lightbox="roadtrip" data-title="Raspberry Pi 4 Firmware Update Pi 4 Now Runs Cooler Than Ever Latest Open Tech From Seeed Studio">
+						<img class="card-img" src="https://blog.seeedstudio.com/wp-content/uploads/2019/11/image-186-1030x494.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSatTyWoJhWs3TZdIhO7ji2RWgfdIvhxw95tw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi 4 Firmware Update Pi 4 Now Runs Cooler Than Ever Latest Open Tech From Seeed Studio
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://forum.radxa.com/uploads/default/original/2X/7/74f3c90dc9bb1dd6e0dd679f1ee334f6bedadae6.jpeg" data-lightbox="roadtrip" data-title="How To Upgrade F W With Jms561 Under Raspberry Pi Sata Hat Radxa Forum">
+						<img class="card-img" src="https://forum.radxa.com/uploads/default/original/2X/7/74f3c90dc9bb1dd6e0dd679f1ee334f6bedadae6.jpeg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-drOgp1A3jxLpTYpykVI0oQs5qrYtLSiawA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Upgrade F W With Jms561 Under Raspberry Pi Sata Hat Radxa Forum
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://10618.finbim.ru/imgOIP.qvBW0qLNXXsSU0r9_etBBQHaFj" data-lightbox="roadtrip" data-title="Skrpk0di3obg9m">
+						<img class="card-img" src="https://10618.finbim.ru/imgOIP.qvBW0qLNXXsSU0r9_etBBQHaFj" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_qcS1QaFr9Sv92Vk2L3gQ3pnpLsVIYRBZA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Skrpk0di3obg9m
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ae01.alicdn.com/kf/H22ad8c888d3443e0b502bd868fa77076M.jpg?width=800&amp;height=800&amp;hash=1600" data-lightbox="roadtrip" data-title="New 1 7 Version Mmdvm Jumbospot Hotspot Can Oled Display Without Raspberry Pi For Vhf Uhf Pi Star P25 Dmr Ysf T0012 Replacement Parts Accessories Aliexpress">
+						<img class="card-img" src="https://ae01.alicdn.com/kf/H22ad8c888d3443e0b502bd868fa77076M.jpg?width=800&amp;height=800&amp;hash=1600" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQF7hWAszUB4xI8Xwh9BjoLB2iiWAniERoZjg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				New 1 7 Version Mmdvm Jumbospot Hotspot Can Oled Display Without Raspberry Pi For Vhf Uhf Pi Star P25 Dmr Ysf T0012 Replacement Parts Accessories Aliexpress
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://techcrunch.com/wp-content/uploads/2021/01/Raspberry-Pi-Pico-1.jpg?w=1024" data-lightbox="roadtrip" data-title="Raspberry Pi Foundation Launches 4 Microcontroller With Custom Chip Techcrunch">
+						<img class="card-img" src="https://techcrunch.com/wp-content/uploads/2021/01/Raspberry-Pi-Pico-1.jpg?w=1024" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi1_3MdYE0QWtrRliAQi0Gob3EcrLfcH5Pxw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Raspberry Pi Foundation Launches 4 Microcontroller With Custom Chip Techcrunch
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>

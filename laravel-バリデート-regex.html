@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://syuntech.net/wp-content/uploads/2020/08/c0aee0751e289475ea5aba59ada7b7e0.png
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Laravel バリデート Regex</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Laravel バリデート Regex",
+  "datePublished": "2021-04-27",
+  "image": [https://www.codegrepper.com/codeimages/laravel-regex-validation.png,https://www.itsolutionstuff.com/upload/laravel-validation-no-space.png,https://websolutionstuff.com/adminTheme/assets/img/how_to_validate_10_digit_mobile_number_using_regular_expression.jpg],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=laravel バリデート regex",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Laravel バリデート Regex</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-success" href="/%E4%BD%95-%E5%9B%9E%E7%9B%AE-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88-%E3%81%A7-%E3%82%A8%E3%83%83%E3%83%81-%E3%81%99%E3%82%8B.html">何 回目 の デート で エッチ する</a>
+											<a class="badge badge-light" href="/%E5%B9%B4%E8%B3%80%E7%8A%B6-%E3%81%84%E3%81%AC-%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3-%E4%BA%BA%E5%BD%A2.html">年賀状 いぬ デザイン 人形</a>
+											<a class="badge badge-success" href="/%E7%BE%A4%E9%A6%AC-%E3%83%87%E3%83%BC%E3%83%88-%E5%AE%A4%E5%86%85.html">群馬 デート 室内</a>
+											<a class="badge badge-warning" href="/%E6%89%8B%E3%82%92%E6%8C%AF%E3%82%8B-%E4%BA%BA%E5%BD%A2.html">手を振る 人形</a>
+											<a class="badge badge-success" href="/%E8%B6%B3%E6%B9%AF-%E3%83%87%E3%83%BC%E3%83%88-%E6%9C%8D%E8%A3%85-%E5%86%AC.html">足湯 デート 服装 冬</a>
+											<a class="badge badge-success" href="/%E5%A4%9C-%E3%81%8B%E3%82%89-%E3%81%AE-%E3%83%87%E3%83%BC%E3%83%88.html">夜 から の デート</a>
+											<a class="badge badge-warning" href="/%E6%A8%A1%E9%80%A0%E5%88%80-5%E6%9C%88%E4%BA%BA%E5%BD%A2.html">模造刀 5月人形</a>
+											<a class="badge badge-primary" href="/%E5%A4%A7%E9%98%AA-%E6%A2%85%E7%94%B0-%E3%83%87%E3%83%BC%E3%83%88-%E3%83%87%E3%82%A3%E3%83%8A%E3%83%BC.html">大阪 梅田 デート ディナー</a>
+											<a class="badge badge-info" href="/hailey5-cafe-%E3%83%87%E3%83%BC%E3%83%88.html">hailey5 cafe デート</a>
+											<a class="badge badge-secondary" href="/%E5%B1%B1%E6%9C%AC-%E3%81%AA%E3%81%AA%E3%81%88-%E5%89%B5%E4%BD%9C-%E4%BA%BA%E5%BD%A2.html">山本 ななえ 創作 人形</a>
+											<a class="badge badge-secondary" href="/%E6%9D%B1%E4%BA%AC-%E4%BD%93-%E3%82%92-%E5%8B%95%E3%81%8B%E3%81%99-%E3%83%87%E3%83%BC%E3%83%88.html">東京 体 を 動かす デート</a>
+											<a class="badge badge-dark" href="/au-iphone-6-%E3%82%AD%E3%83%A3%E3%83%AA%E3%82%A2%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88.html">au iphone 6 キャリアアップデート</a>
+											<a class="badge badge-danger" href="/%E6%97%A6%E9%82%A3-%E3%81%A8-%E3%83%87%E3%83%BC%E3%83%88-%E9%96%A2%E8%A5%BF.html">旦那 と デート 関西</a>
+											<a class="badge badge-secondary" href="/%E7%8B%A9%E4%BA%BA%E3%81%AE%E5%A4%A2-%E4%BA%BA%E5%BD%A2.html">狩人の夢 人形</a>
+											<a class="badge badge-info" href="/%E7%94%9F%E3%83%80%E3%83%A1%E3%81%A3%E3%81%A6%E3%81%84%E3%81%A3%E3%81%9F%E3%81%AE%E3%81%AB%E3%81%83-%E3%81%BE%E3%82%8B%E3%81%A7%E3%81%8A%E4%BA%BA%E5%BD%A2%E3%81%95%E3%82%93%E3%81%AE%E6%A7%98%E3%81%AB%E7%8F%BE%E5%AE%9F%E9%9B%A2%E3%82%8C%E3%81%97.html">生ダメっていったのにぃ まるでお人形さんの様に現実離れし</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/HfNfX.png" data-lightbox="roadtrip" data-title="Laravel 5 4 Validation With Regex Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/HfNfX.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1bhDyJVd5ZGQG2y_Pc2z7SwWLzcqs8NuV8dft6fll6JBaUBa1I6ns1tyJWUmsxfUOm2Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 5 4 Validation With Regex Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/uDbc9.png" data-lightbox="roadtrip" data-title="How To Allow Specific Characters With Laravel Validation Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/uDbc9.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN11YJ3k_NOOnWE3He2fgiTRvaACUB4GeR_aIY4GM6TAWXV6bzmrTYwCpLV2tK_hE_IQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Allow Specific Characters With Laravel Validation Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/6424/1*btAWDOEQYCqCHT80FhqePQ.png" data-lightbox="roadtrip" data-title="Laravel Validation Username No Space Allowed Alpha Dash Or Regex Custom Rule By Panjeh Medium">
+						<img class="card-img" src="https://miro.medium.com/max/6424/1*btAWDOEQYCqCHT80FhqePQ.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbF9de1Z_J8DUWH24FF4ttlHIqqWqCini7_91eLVKdbqbfBzNLcuJPpD3hH3lMgxTbGVg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Username No Space Allowed Alpha Dash Or Regex Custom Rule By Panjeh Medium
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1607749881_rejaxvalidationlaravel.gif" data-lightbox="roadtrip" data-title="Laravel Validation Regex Pattern Example">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1607749881_rejaxvalidationlaravel.gif" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTImAF72tI79XSp4jvdRiJXQeAWtVt4DE8U8w4u_-R3DHKzIaltxf6DAKYoH7xeS0vvgY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Regex Pattern Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/dgWJS.png" data-lightbox="roadtrip" data-title="Laravel Validation For Email Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/dgWJS.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAsaG7ncnwDnswwi-FRiW6L3mAb6dU6B0HuZOinA-gMVyZtbosqVMKwzExGKeDnbtVna0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation For Email Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vegibit.com/wp-content/uploads/2014/12/laravel-regex-validation.png" data-lightbox="roadtrip" data-title="Build A Regular Expression Tester With Laravel Vegibit">
+						<img class="card-img" src="https://vegibit.com/wp-content/uploads/2014/12/laravel-regex-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLa2y6gt6e9l06R29Z58fsVrPExawpwnJ5aRCt-4D1zSEgoGQE7hBpiCLpO2ZIFnVz_g4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Build A Regular Expression Tester With Laravel Vegibit
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="https://5balloons.info/wp-content/uploads/2018/02/password-regex-validation-laravel.png" data-lightbox="roadtrip" data-title="Strong Password Regex Validation With Laravel Authentication 5 Balloons">
+						<img class="card-img" src="https://5balloons.info/wp-content/uploads/2018/02/password-regex-validation-laravel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4QN0t3FK8hwxbtMFGvAK5CqW5ELL3xgGV5PDRtEPo6mhzYe4m-HjttN4M4KKQTBKnXes';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Strong Password Regex Validation With Laravel Authentication 5 Balloons
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/validation-regex-laravel.png" data-lightbox="roadtrip" data-title="Validation Regex Laravel Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/validation-regex-laravel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUSFplSOJahi2Kv-yTEBOXWlEfITppqDO6XaqQEBYQGuKXG8rBjq-s6ZCI8dgmAc37wA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Validation Regex Laravel Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://vegibit.com/wp-content/uploads/2014/02/laravel-form-validation.png" data-lightbox="roadtrip" data-title="Laravel Validation Vegibit">
+						<img class="card-img" src="https://vegibit.com/wp-content/uploads/2014/02/laravel-form-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGVVdiZj9OGyL7pFKadgRFd1Dl4XMXdw5TMJVjqy6_33Y1Im0eAzvw-tkwW9ROxB9gB9I';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Vegibit
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/laravel-regex-validation.png" data-lightbox="roadtrip" data-title="Laravel Regex Validation Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/laravel-regex-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfSsmTRQToUsQh5ZL4lrXxoHwZ3Fu9WuUoPmLclAp1Zmmg0dpsUB73s2iNAAlDqprwRc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Regex Validation Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/nM5Pd.png" data-lightbox="roadtrip" data-title="Laravel Regex Match Url With Jpg Not Working Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/nM5Pd.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHGRYxRFYbGzN2wKsxtyIl251282-AZkG8n_ZkuZvUyRqSHDUL3PAQjS04APg7LTfEDA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Regex Match Url With Jpg Not Working Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.devopsschool.com/blog/wp-content/uploads/2020/08/specialCharacters.png" data-lightbox="roadtrip" data-title="Special Characters Not Allowed Validation In Laravel 5 8 Devopsschool Com">
+						<img class="card-img" src="https://www.devopsschool.com/blog/wp-content/uploads/2020/08/specialCharacters.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFK6a5Yn41vRb4ELD8ru46FMrOtJmxhZu-Fvh1vrJfgPNnWlLBPQbOPYRZhKzB5JzEG8';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Special Characters Not Allowed Validation In Laravel 5 8 Devopsschool Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.positronx.io/wp-content/uploads/2020/06/jquery-form-validation-10131-03.jpg" data-lightbox="roadtrip" data-title="How To Create And Validate Form In Laravel 8 Positronx Io">
+						<img class="card-img" src="https://www.positronx.io/wp-content/uploads/2020/06/jquery-form-validation-10131-03.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUvflSFGSq8d6C3YOC6crH97L6iI90uOtjbKmp3aTrbiS7VX0BrkQj-FrMtsGzm2sxPQE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Create And Validate Form In Laravel 8 Positronx Io
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/regular-expression-for-alphanumeric-in-laravel-validation.png" data-lightbox="roadtrip" data-title="Regular Expression For Alphanumeric In Laravel Validation Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/regular-expression-for-alphanumeric-in-laravel-validation.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1kYHbFWn-A4JYrK1AGcmaqfH6o7Go9A6KrAX61zIdwhaVD9NT1n4Oq9PXF7fRS-NtOVw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Regular Expression For Alphanumeric In Laravel Validation Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://codebriefly.com/wp-content/uploads/2018/03/laravel-regex-validation-450x300.jpg" data-lightbox="roadtrip" data-title="Secure User Authentication With Regex Validation Code Briefly">
+						<img class="card-img" src="https://codebriefly.com/wp-content/uploads/2018/03/laravel-regex-validation-450x300.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE1l1T-1FqvlD-wRh3lAzhtiCt0rEf3uNcMMko8M_3wfUp1I256RCY5zIVqUoTmPFJGkg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Secure User Authentication With Regex Validation Code Briefly
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/zmFRH.png" data-lightbox="roadtrip" data-title="How To Validate Input File Name In Laravel 5 6 Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/zmFRH.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNzV1NJ9SAFB6Mny3dFzOCktUWkmKStsXsmz2F7xwLVW034eokuust7x_TiAgEVW0W6Zk';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate Input File Name In Laravel 5 6 Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.nicesnippets.com/upload/blog/1576502881_FireShot%20Capture%20001%20-%20Laravel%20Money%20Validation%20-%20localhost.png" data-lightbox="roadtrip" data-title="How To Validate Money In Laravel Request Class">
+						<img class="card-img" src="https://www.nicesnippets.com/upload/blog/1576502881_FireShot%20Capture%20001%20-%20Laravel%20Money%20Validation%20-%20localhost.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSspyBA4aApv1K0TvAyvCAVMpg8pcPWU5I3HYeyH2ggQ_Rjz46fRJ2npVN6PH7RfK5T01k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate Money In Laravel Request Class
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/list-of-validation-rules-in-laravel.png" data-lightbox="roadtrip" data-title="List Of Validation Rules In Laravel Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/list-of-validation-rules-in-laravel.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJESyAT8fzRgeV421qCJrLgqlFHjWAjeu6HIjf9ZUcPX8MKFuALegI2AG2uaT1Pkk3a2k';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				List Of Validation Rules In Laravel Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codechief.org/public/editor/kcfinder/upload/images/laravel-strong-password-validation-example.jpg" data-lightbox="roadtrip" data-title="Regex Strong Password Validation Example In Laravel">
+						<img class="card-img" src="https://www.codechief.org/public/editor/kcfinder/upload/images/laravel-strong-password-validation-example.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSafE_dN28oMicY-8t1E170O8UDuveZrH84DX7JqV0soH7-zMzD7G0wv30UJZCEHFARkH0';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Regex Strong Password Validation Example In Laravel
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.ytimg.com/vi/yfJP8CQJNYE/maxresdefault.jpg" data-lightbox="roadtrip" data-title="Front End Form Validation Using Parsleys Js In Laravel 5 8 Webslesson">
+						<img class="card-img" src="https://i.ytimg.com/vi/yfJP8CQJNYE/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSiOVfp0uAEem5rpazA-wm2_Na7V8mq8oI7jDOl2nBKu3SFIpQIffD5RqzStPLWLTQeCs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Front End Form Validation Using Parsleys Js In Laravel 5 8 Webslesson
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://miro.medium.com/max/10580/1*EgUBeyHn-j9RVfJfySGT8g.png" data-lightbox="roadtrip" data-title="Laravel Validation Rules Domain Names Citizenship Identification Numbers And Zero Whitespace Strings By Matt Kingshott Itnext">
+						<img class="card-img" src="https://miro.medium.com/max/10580/1*EgUBeyHn-j9RVfJfySGT8g.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiJDio_1PLGD8JtT-g7-8P004-33CyNpqvZw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Rules Domain Names Citizenship Identification Numbers And Zero Whitespace Strings By Matt Kingshott Itnext
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://websolutionstuff.com/adminTheme/assets/img/how_to_validate_10_digit_mobile_number_using_regular_expression.jpg" data-lightbox="roadtrip" data-title="How To Validate 10 Digit Mobile Number Using Regular Expression">
+						<img class="card-img" src="https://websolutionstuff.com/adminTheme/assets/img/how_to_validate_10_digit_mobile_number_using_regular_expression.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwRxMQUxW6ERc1NKGVY6Gmh-FLWkE12t64pQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate 10 Digit Mobile Number Using Regular Expression
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://laravelarticle.com/filemanager/uploads/laravel-validation-cheat-sheet.png" data-lightbox="roadtrip" data-title="Laravel Validation Cheat Sheet Laravel Article">
+						<img class="card-img" src="https://laravelarticle.com/filemanager/uploads/laravel-validation-cheat-sheet.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRHB6LCjBqxqG8nXTURGmZ3uubEHsMg3MX-A';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Cheat Sheet Laravel Article
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.stack.imgur.com/WSchc.png" data-lightbox="roadtrip" data-title="Laravel Validation Throwing Route Error Stack Overflow">
+						<img class="card-img" src="https://i.stack.imgur.com/WSchc.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR4wEyubtLwQS6v-VxnkuS6zfIkceSVziYFw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Throwing Route Error Stack Overflow
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://laraweb.net/wp-content/uploads/2019/11/main.png" data-lightbox="roadtrip" data-title="Laravel バリデーションルール まとめ Laravel学習帳">
+						<img class="card-img" src="https://laraweb.net/wp-content/uploads/2019/11/main.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXtci4kCwhQQ8Qp658ibDm51gwVNsvo8-HQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel バリデーションルール まとめ Laravel学習帳
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://blogdev.net/upload/auto/2021/03/laravel-validation-regex-pattern-example.jpg" data-lightbox="roadtrip" data-title="Laravel Validation Regex Pattern Example">
+						<img class="card-img" src="https://blogdev.net/upload/auto/2021/03/laravel-validation-regex-pattern-example.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXPz-BGej3LopweKRqdtQ6WRjdaPYCP3jMoQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Regex Pattern Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.pinimg.com/originals/f8/b2/44/f8b24467646a160943ac042d0b8aaa23.png" data-lightbox="roadtrip" data-title="Laravel Validation Username No Space Allowed Alpha Dash Or Regex Custom Rule Tip By Panjeh Laravelcollections Laravel Php Dev Coder C Custom Rules Alpha">
+						<img class="card-img" src="https://i.pinimg.com/originals/f8/b2/44/f8b24467646a160943ac042d0b8aaa23.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUaRN3khs5vY9epvkT0UdHIT_e62z69FUEw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel Validation Username No Space Allowed Alpha Dash Or Regex Custom Rule Tip By Panjeh Laravelcollections Laravel Php Dev Coder C Custom Rules Alpha
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="http://www.phpzone.in/wp-content/uploads/2020/07/How-to-validate-mobile-phone-number-in-laravel-with-example.jpg" data-lightbox="roadtrip" data-title="How To Validate Mobile Phone Number In Laravel With Example">
+						<img class="card-img" src="http://www.phpzone.in/wp-content/uploads/2020/07/How-to-validate-mobile-phone-number-in-laravel-with-example.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNMDhyoCL4VyTRThnfBDMToA-OZQjuIs45Q';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate Mobile Phone Number In Laravel With Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.codegrepper.com/codeimages/laravel-6-validation-multiple-messages-on-regular-expression.png" data-lightbox="roadtrip" data-title="Laravel 6 Validation Multiple Messages On Regular Expression Code Example">
+						<img class="card-img" src="https://www.codegrepper.com/codeimages/laravel-6-validation-multiple-messages-on-regular-expression.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDJzK5D19PqSirql2ts4XdwPuKxcd_2kEYrg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 6 Validation Multiple Messages On Regular Expression Code Example
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.itsolutionstuff.com/upload/laravel-validation-no-space.png" data-lightbox="roadtrip" data-title="Space Not Allowed Validation In Laravel Example Itsolutionstuff Com">
+						<img class="card-img" src="https://www.itsolutionstuff.com/upload/laravel-validation-no-space.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCAWqnddxMmIwxDl-hhAtcqHle7qmP6UJZLA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Space Not Allowed Validation In Laravel Example Itsolutionstuff Com
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://4.bp.blogspot.com/-WIgLNa2e3jc/WAXJDLExlCI/AAAAAAAAAVI/S7xC5QWyon83glAKPAWZhbpdcbLUAOivwCLcB/w1200-h630-p-k-no-nu/laravel-request-validation.jpg" data-lightbox="roadtrip" data-title="Phone Number Validation In Laravel How To Validate Phone Number In Laravel Nazmul Hossain Javed">
+						<img class="card-img" src="https://4.bp.blogspot.com/-WIgLNa2e3jc/WAXJDLExlCI/AAAAAAAAAVI/S7xC5QWyon83glAKPAWZhbpdcbLUAOivwCLcB/w1200-h630-p-k-no-nu/laravel-request-validation.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Xf2kc5QOGXwGjcc9faq2o9jELF-jY_HZtw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Phone Number Validation In Laravel How To Validate Phone Number In Laravel Nazmul Hossain Javed
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://websolutionstuff.com/adminTheme/assets/img/how_to_validate_url_in_php_with_regex.jpg" data-lightbox="roadtrip" data-title="How To Validate Url In Php With Regex">
+						<img class="card-img" src="https://websolutionstuff.com/adminTheme/assets/img/how_to_validate_url_in_php_with_regex.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8PWvnCzY0fqrbvBwK9yCv6pFyKQ4yD12YAA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				How To Validate Url In Php With Regex
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://syuntech.net/wp-content/uploads/2020/08/c0aee0751e289475ea5aba59ada7b7e0.png" data-lightbox="roadtrip" data-title="Laravel 半角英数のバリデーション Alpha Num 南の島で仕事したいseのエンジニアブログ">
+						<img class="card-img" src="https://syuntech.net/wp-content/uploads/2020/08/c0aee0751e289475ea5aba59ada7b7e0.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSojqbcwaN_1jcqkT3IRJsqOSbmk5WhdHmJkQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Laravel 半角英数のバリデーション Alpha Num 南の島で仕事したいseのエンジニアブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
